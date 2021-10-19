@@ -1,0 +1,7 @@
+---
+- hosts: nodes
+  become: true
+  tasks:
+
+- name: Delete default network interface
+  cmd: ip route del default
