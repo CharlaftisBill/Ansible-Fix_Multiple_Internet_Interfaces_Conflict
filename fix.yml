@@ -1,7 +1,6 @@
 ---
-- hosts: nodes
+- hosts: all
   become: true
   tasks:
-
-- name: Delete default network interface
-  cmd: ip route del default
+    - name: Delete default network interface.
+      command: ip route del default
